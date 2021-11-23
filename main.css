@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* color: #444444; */
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://i.ibb.co/V9q48Nd/spin-prod-235705401.jpg"  ) no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://i.ibb.co/SN954ZM/skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://i.ibb.co/djBzD77/Sparx-Black-Sport-Shoes-SDL217152936-1-631bd.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://i.ibb.co/M2KwyV3/192283056253.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://i.ibb.co/SN954ZM/skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://i.ibb.co/SN954ZM/skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://i.ibb.co/V9q48Nd/spin-prod-235705401.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://i.ibb.co/3dpx4QY/Addoxy-Men-White-Sports-Shoes-SDL306647168-2-987c3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* <a href="https://ibb.co/0D14pMd"><img src="https://i.ibb.co/M2KwyV3/192283056253.jpg" alt="192283056253" border="0"></a>
+<a href="https://ibb.co/cJ7kSsZ"><img src="https://i.ibb.co/SN954ZM/skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes.jpg" alt="skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes" border="0"></a>
+<a href="https://ibb.co/TYcFtrr"><img src="https://i.ibb.co/djBzD77/Sparx-Black-Sport-Shoes-SDL217152936-1-631bd.jpg" alt="Sparx-Black-Sport-Shoes-SDL217152936-1-631bd" border="0"></a>
+<a href="https://ibb.co/JtsJPdN"><img src="https://i.ibb.co/V9q48Nd/spin-prod-235705401.jpg" alt="spin-prod-235705401" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/GVyL41Z/th-1.jpg" alt="th-1" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/1dqpbp6/th-2.jpg" alt="th-2" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/Mg0L47P/th-3.jpg" alt="th-3" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/JsrsgXF/th.jpg" alt="th" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload</a><br />
+
+<a href="https://ibb.co/Rb3XYd4"><img src="https://i.ibb.co/3dpx4QY/Addoxy-Men-White-Sports-Shoes-SDL306647168-2-987c3.jpg" alt="Addoxy-Men-White-Sports-Shoes-SDL306647168-2-987c3" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload</a><br />
+
+
+<a href="https://ibb.co/kXRjhRk"><img src="https://i.ibb.co/VT7Rv7r/balenciaga-MULTICOLOUR-track-Sport-Shoes.jpg" alt="balenciaga-MULTICOLOUR-track-Sport-Shoes" border="0"></a>
+<a href="https://ibb.co/cJ7kSsZ"><img src="https://i.ibb.co/SN954ZM/skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes.jpg" alt="skechers-flex-advantage-2-0-mens-athletic-shoes-ss17-skechers-flex-advantage-2-0-mens-athletic-shoes" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload</a><br /> */
+
+
+/* https://imgbb.com/ */
